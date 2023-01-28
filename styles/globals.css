@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-white md:h-screen dark:bg-[#3C3C3C] md:dark:bg-gradient-to-b from-[#6F6F6F] to-[#3C3C3C]
+    }
+}
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+}
+
+#text > a  {
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(105, 160, 255)
+}
